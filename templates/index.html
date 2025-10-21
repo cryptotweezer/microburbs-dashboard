@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microburbs Professional Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Microburbs" class="logo">
+                <div>
+                    <h1>Property Intelligence Platform</h1>
+                    <p class="tagline">Ask Duke AI Your Property Expert</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-panel">
+            <input type="text" id="suburb" placeholder="Enter suburb name" value="Belmont North">
+            <button onclick="loadData()" class="btn-primary">Search Market</button>
+        </div>
+
+        <div class="selector-panel">
+            <h3>Data Modules</h3>
+            <div class="checkbox-grid">
+                <label><input type="checkbox" value="properties" checked> Properties</label>
+                <label><input type="checkbox" value="market"> Market Trends</label>
+                <label><input type="checkbox" value="demographics"> Demographics</label>
+                <label><input type="checkbox" value="schools"> Schools</label>
+                <label><input type="checkbox" value="amenity"> Amenities</label>
+                <label><input type="checkbox" value="risk"> Risk Factors</label>
+                <label><input type="checkbox" value="summary"> Area Summary</label>
+            </div>
+            <button onclick="loadData()" class="btn-apply">Apply Selection</button>
+        </div>
+        
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading market intelligence...</p>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>

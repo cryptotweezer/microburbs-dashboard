@@ -1,0 +1,54 @@
+touch .gitignore
+```
+
+Abre `.gitignore` y pega:
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.pytest_cache/
+.coverage
+
+# Logs
+*.log
+```
+
+---
+
+### 1.3 Actualiza `requirements.txt`
+
+Agrega estas líneas:
+```
+flask==3.0.0
+requests==2.31.0
+openai==1.54.3
+python-dotenv==1.0.0
