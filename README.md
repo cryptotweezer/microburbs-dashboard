@@ -4,6 +4,20 @@
 
 A comprehensive real estate intelligence platform for the Australian property market. Built for Microburbs to analyze property data, market trends, demographics, schools, and local amenities across Australian suburbs.
 
+
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+### Market Insights
+![Market Insights](screenshots/market-insights.png)
+
+### Duke AI Assistant
+![Duke Chat](screenshots/duke-chat.png)
+
+
+
 ## 🏠 What is This?
 
 **Microburbs Professional Dashboard** is a web-based analytics tool that provides:
